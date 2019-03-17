@@ -19,7 +19,7 @@ html(lang="en")
                 .header__menu
                   nav.nav
                     ul.nav__list
-                      - var menu = ['Главная', 'Главная', 'Главная' , 'Главная' , 'Главная'];
+                      - var menu = ['Главная', 'Обо мне', 'Навыки' , 'Работы' , 'Отзывы' , 'Связаться'];
                       each item in menu
                         li.nav__item
                           a(href="").nav__link #{item}
@@ -33,8 +33,8 @@ html(lang="en")
                           +icon(`${item}`, 'socials__icon')
               .hero__content
                 .user-info
-                  .user-info__desc Личный сайт веб-разработчика
-                  .user-info__name Владимир Астаханов
+                  .user-info__desc Личный сайт веб разработчика
+                  .user-info__name Фролов Валентин
               .hero__bottom-buttons()
                 .scroll-down-button Скролл
 
@@ -43,14 +43,14 @@ html(lang="en")
               .about__left
                 .user
                   .user__avatar
-                    img(src="", alt="").user__avatar-pic
+                    img(src="../images/content/user.jpg", alt="").user__avatar-pic
                   .user__data
                     table.user__data-table
                       - 
                         var data = [
-                          ['проживаю', 'новосибирск'],
-                          ['проживаю', 'новосибирск'],
-                          ['проживаю', 'новосибирск'],
+                          ['Проживаю:', 'Москва'],
+                          ['Возраст:', '24 года'],
+                          ['Родился:', '12 января 1995'],
                         ]
                       each row in data
                         tr.user__data-row
@@ -59,34 +59,25 @@ html(lang="en")
 
             .about__right
           
-              .about__welcome Привет!
-              .about__username Владимир Астаханов
+              .about__welcome Привет, меня зовут
+              .about__username Фролов Валентин
               .about__desc
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid molestias impedit, inventore possimus doloribus ex laudantium quibusdam similique eos, nulla aperiam obcaecati facere ab libero eius vel consequatur velit distinctio?
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid molestias impedit, inventore possimus doloribus ex laudantium quibusdam similique eos, nulla aperiam obcaecati facere ab libero eius vel consequatur velit distinctio?
+                p Я заниаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и созвременный проекты.
               .about__ps
-                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus quidem rem pariatur fugit quae vel consectetur odio dolores ab aperiam culpa, voluptatem nisi ducimus nobis atque sapiente, voluptatum incidunt labore!
+                p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool Чуть позже я освяжу в нем контент. А пока посмотрите, как тут все классно и красиво!
               
-        .triangles
-          svg.triangles__item.trianles__item--left(viewBox="0 0 1000 100" preserveAspectRatio="none")
-            polygon(
-              points="0,0 0,100 1000,100"
-            )
-          svg.triangles__item.triangles__item--right(viewBox="0 0 1000 100" preserveAspectRatio="none")
-            polygon(
-              points="0,100 1000,100 1000,0"
-            )
+        
         section.values
           .container
             .values__title
               h2.section-title.values__title-text.section-title--small Чем я могу быть вам полезен
               .values__desc
-                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint, voluptatibus quis libero doloremque et, sit fugit fuga esse ex veniam. Excepturi labore recusandae deserunt nostrum saepe! Ea, sit officiis.
+                p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
             ul.user-skills
               - 
                 var skills = [
-                  ['frontend', ['html', 'css', 'js']],
-                  ['workflow', ['git', 'gulp', 'webpack']],
+                  ['Front-end', ['HTML5', 'CSS3', 'Javascript', 'Jquery и Vue.js']],
+                  ['WorkFlow', ['GIT', 'Terminal', 'gulp', 'webpack']],
                 ]
               each item in skills
                 li.user-skills__item.skills-row
@@ -128,9 +119,9 @@ html(lang="en")
           .container.footer__container
             .footer__copyright
               .copyright
-                //- .copyright__year 2019
-                .copyright__username Владимир Астаханов
-                .copyright__desc Личный сайт
+                .copyright__year 2019
+                .copyright__username Фролов Валентин
+                .copyright__desc Личный сайт веб-разработчика
             .footer__data
               .footer__menu
                 nav.nav.nav--color-white
@@ -141,7 +132,7 @@ html(lang="en")
               .footer__data-columns
                 .footer__data-col
                   article.footer__text
-                    | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis quasi ipsam voluptas? Ab corrupti perferendis commodi ullam tenetur nam deserunt asperiores! Distinctio minima ullam eveniet facere sit in ducimus?
+                    |Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool
                   ul.footer__social.socials.socials--rounded
                     each item in socials
                       li.socials__item
@@ -149,8 +140,7 @@ html(lang="en")
                           +icon(`${item}`, 'socials__icon')
                 .footer__data-col
                   article.footer__text
-                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit sed autem quo possimus eligendi officiis veritatis! Corporis vitae iusto reprehenderit maxime autem ex. Laboriosam ad, nemo tenetur velit quisquam necessitatibus.
-                    //-  dolor, sit amet consectetur adipisicing elit. Suscipit sed autem quo possimus eligendi officiis veritatis! Corporis vitae iusto reprehenderit maxime autem ex. Laboriosam ad, nemo tenetur velit quisquam necessitatibus.
+                    p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает где вы живете
 
 
 

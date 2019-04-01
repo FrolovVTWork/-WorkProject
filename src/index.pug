@@ -13,7 +13,7 @@ html(lang="ru")
         .welcome-section
           section.parallax
             - for (var i = 1; i <= 7; i++)
-              .parallax__layer
+              .parallax__layer 
                 picture
                   source(srcset=require(`images/parallax/${i}_2560.${i === 1 ? 'jpg' : 'png'}`) media="(min-width: 1920px)").parallax__image
                   img(srcset=require(`images/parallax/${i}.${i === 1 ? 'jpg' : 'png'}`)).parallax__image
@@ -40,7 +40,7 @@ html(lang="ru")
               .hero__content
                 .userinfo
                   .userinfo__title Личный сайт #[span.userinfo__occ веб разработчика]
-                  .userinfo__name Владимир Астаханов
+                  .userinfo__name Фролов Валентин
               .hero__downbutton
                 .scroll-down
                   a(href="").scroll-down__btn Скролл
@@ -56,9 +56,9 @@ html(lang="ru")
                     .user__about
                       - 
                         var userinfo = [
-                          ['Проживаю:', "Новосибирск"],
-                          ['Возраст:', "27 лет"],
-                          ['Родился:', "1 января 1991"],
+                          ['Проживаю:', "Москва"],
+                          ['Возраст:', "24 лет"],
+                          ['Родился:', "12 января 1995"],
                         ];
                       table.user__table
                         each item in userinfo
@@ -68,7 +68,7 @@ html(lang="ru")
                 .about__user-text
                   .about__main-text-content
                     .about__desc Привет, меня зовут
-                    .about__title Владимир Астаханов
+                    .about__title Фролов Валентин
                     .about__text-info
                       p Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
                   .about__ps
